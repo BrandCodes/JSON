@@ -1,0 +1,23 @@
+<DOCTYPE hmtml>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Json</title>
+</head>
+<body>
+	<div id="info"></div>
+	<script type="text/javascript">
+		// la cadena:
+		var cadenaJSON = '{"nombre":"Marian","apellido":"Juárez","edad":25,"salario":2000}';
+		//document.write(typeof cadenaJSON);			//sale string
+
+		// a objeto (de cadena a objeto):
+		var personaJSON = JSON.parse(cadenaJSON);
+		//document.write(typeof personaJSON);			//sale object
+
+		// a cadena nuevamente (de objeto a cadena):
+		var stringJSON = JSON.stringify(personaJSON);
+		document.write(typeof stringJSON);				//sale string
+	</script>
+</body>
+</html>
