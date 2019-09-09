@@ -1,0 +1,33 @@
+<DOCTYPE hmtml>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Json</title>
+</head>
+<body>
+	<div id="info"></div>
+	<script type="text/javascript">
+		//objeto json con sus props y sus respectivos valores
+		var personaJSON = {
+			"nombre":"Marian",
+			"apellido":"Juárez",
+			"edad":25,"salario":2000
+
+		};
+
+		//accediendo a las props del objecto
+		//document.write(personaJSON.nombre + " tiene: " + personaJSON.edad + " años.");
+
+		//accediendo de forma concatenada
+		var cliente = "";
+		cliente += "Nombre: " + personaJSON.nombre + "<br/>";
+		cliente += "Apellido: " +personaJSON.apellido + "<br/>";
+		cliente += "Edad: " + personaJSON.edad + "<br/>";
+		cliente += "Salario: " + personaJSON.salario + "<br/>";
+		
+		//mostrando:
+		var elemento = document.getElementById("info");
+		elemento.innerHTML = cliente;
+	</script>
+</body>
+</html>
